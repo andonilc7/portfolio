@@ -450,6 +450,7 @@ so that image just fills up whole with i.e. no padding if small enough screen */
   }
 
   .footer-picture {
-    margin-bottom: -5px;
+    /* to take away a few extra pixels at bottom */
+    font-size: 0;
   }
 }
