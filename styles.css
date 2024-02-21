@@ -372,6 +372,7 @@ footer picture {
     margin-bottom: 15px;
     color: black;
     text-wrap: wrap;
+    white-space: normal;
     text-align: center;
   }
 
