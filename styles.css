@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display';
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  width: 100vw;
+}
+
+header {
+  background: linear-gradient(-8deg,  transparent calc(35% - 1px), #418FAE  35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  width: 100vw;
+}
+
+a {
+  transition: transform .3s;
+  transform-origin: center;
+}
+
+a:hover {
+  /* need to figure out way so that 
+  wont resize everything else slightly */
+  transform: scale(1.2);
+}
+
+
+
+.name-title {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  color: whitesmoke;
+  font-size: 3.5rem;
+  position: absolute;
+  top: -100px;
+  left: 70px;
+}
+
+.senior-pic {
+  max-width: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+  z-index: 1;
+}
+
+.profile-cont {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.about-me-cont {
+  /* border: 1px solid black; */
+  /* display: flex; */
+  flex-direction: column;
+  padding: 40px 25px;
+  padding-right: 40px;
+  background-color: white;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.about-me-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: 'Playfair Display'
+}
+
+.about-me-text {
+  font-size: 1.1rem;
+  font-family: 'Roboto';
+  color: #565656;
+  margin-bottom: 10px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: end;
+}
+
+.about-me-links {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.work-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.project-cont {
+  /* border: 1px solid black; */
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, .12);
+  transition: transform .15s;
+}
+
+.project-cont:hover {
+  transform:scale(1.05);
+}
+
+.project-img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.project-details-cont {
+  padding: 10px 18px 15px;
+}
+
+.project-nav-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.project-nav-bar img {
+  margin-top: 5px;
+}
+
+.project-name {
+  flex: 66%;
+  font-weight: 500;
+}
+
+.project-links {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+.project-links img {
+  width: 1.5rem;
+}
+
+.project-links {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.project-desc {
+  font-family: 'Roboto';
+  color: #565656;
+}
+
+footer {
+  background-color: #418FAE;
+  padding: 60px 80px;
+  color: white;
+}
+
+footer p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-cont {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1175px;
+  margin: auto;
+  gap: 50px;
+}
+
+.contact-left {
+  justify-self: start;
+}
+
+.contact-me-title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.email p {
+  margin: 0;
+}
+
+.email svg {
+  width: 1.5rem;
+  margin-right: 8px;
+  fill: white;
+}
+
+.contact-me-links {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  margin-right: 15px;
+}
+
+.contact-links-container {
+  display: flex;
+}
+
+footer img {
+  max-width: 550px;
+}
+
+footer picture {
+  justify-self: end;
+}
+
+
+@media (width<=1250px) {
+
+  .name-title {
+    z-index: 2;
+    margin-top: 25px;
+    margin-left: 95px;
+    white-space: nowrap;
+    font-size: 3.2rem;
+  }
+
+  .profile-cont {
+    max-width: 525px;
+    margin: 80px;
+    display: block;
+    /* border: 1px solid black; */
+  }
+
+  .senior-pic {
+    max-width: 100%;
+    /* transform: translateX(50px); */
+  }
+
+  .about-me-title {
+    text-align: center;
+  }
+
+  .about-me-cont {
+    width: 100%;
+    padding-top: 80px;
+  }
+
+  .about-me-img {
+    max-width: 325px;
+    padding-right: 15px;
+    position: relative;
+    right: 50px;
+    bottom: 80px;
+    margin-bottom: -80px;
+    margin-right: -50px;
+    /* margin-left: 50px; */
+    float: left;
+    z-index: 1;
+  }
+
+  .main-content {
+    max-width: 950px;
+    margin: 0px 40px 60px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer img {
+    max-width: 400px;
+  }
+
+  .contact-cont {
+    max-width: 1000px;
+  }
+  
+
+}
+
+@media (width<=800px) {
+
+  footer {
+    padding:40px;
+  }
+
+  footer img {
+    max-width: 325px;
+  }
+
+}
+
+@media (width<=650px) {
+  header {
+    padding-top: 10px;
+    background: linear-gradient(-8deg,  transparent calc(65% - 1px), #418FAE  65%);
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-img {
+    max-width: 325px;
+    padding: 0;
+    position: static;
+    z-index: 1;
+    float: none;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .contact-cont {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .about-me-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    padding: 0 20px 40px;
+    margin-bottom: 40px;
+  }
+  
+  .name-title {
+    max-width: 100%;
+    margin: 0;
+    top:0;
+    left:0;
+    position: static;
+    margin-bottom: 15px;
+    color: black;
+    text-wrap: wrap;
+    text-align: center;
+  }
+
+  .about-me-title {
+    color: rgba(134, 134, 134, 0.74);
+  }
+
+  .work-title {
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .contact-cont {
+    justify-items: center;
+    gap: 40px;
+  }
+
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-me-title {
+    text-align: center;
+  }
+
+  footer picture {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+/* fix how image gets bigger than footer, maybe do somehow
+so that image just fills up whole with i.e. no padding if small enough screen */
+}
+
+@media (width<=400px) {
+  .about-me-cont {
+    max-width: 350px;
+  }
+
+  .contact-cont {
+    max-width: 100%;
+  }
+
+  .contact-cont > * {
+    max-width: 100%;
+    text-wrap: wrap;
+    /* width: min-content; */
+    overflow-wrap: break-word;
+  }
+
+  footer {
+    padding-left:0;
+    padding-right:0;
+    padding-bottom: 0;
+  }
+  .contact-left {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  .footer-picture, footer img  {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .footer-picture {
+    margin-bottom: -5px;
+  }
+}
