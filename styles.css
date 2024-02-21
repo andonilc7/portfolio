@@ -244,7 +244,7 @@ footer picture {
 }
 
 
-@media (device-width<=1250px) {
+@media (max-width: 1250px) {
 
   .name-title {
     z-index: 2;
@@ -308,7 +308,7 @@ footer picture {
 
 }
 
-@media (device-width<=800px) {
+@media (max-width: 800px) {
 
   footer {
     padding:40px;
@@ -320,7 +320,7 @@ footer picture {
 
 }
 
-@media (width<=650px) {
+@media (max-width: 650px) {
   header {
     padding-top: 10px;
     background: linear-gradient(-8deg,  transparent calc(65% - 1px), #418FAE  65%);
@@ -409,7 +409,7 @@ footer picture {
 so that image just fills up whole with i.e. no padding if small enough screen */
 }
 
-@media (width<=400px) {
+@media (max-width: 400px) {
   .about-me-cont {
     max-width: 350px;
   }
